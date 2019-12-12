@@ -1,0 +1,13 @@
+package com.cltech.lis.api.rest.models.entity;
+
+import java.io.Serializable;
+
+public class LineaOrden implements Serializable{
+	
+	private Long id;
+
+	
+	
+	private static final long serialVersionUID = 1L;
+
+}

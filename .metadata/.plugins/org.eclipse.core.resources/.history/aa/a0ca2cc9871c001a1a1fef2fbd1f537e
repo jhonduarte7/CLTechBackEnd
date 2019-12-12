@@ -1,0 +1,17 @@
+package com.cltech.lis.api.rest.models.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Tipo implements Serializable {
+
+private Long id;
+ private String nombre;
+ 
+
+	private static final long serialVersionUID = 1L;
+ 
+
+}

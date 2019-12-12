@@ -1,0 +1,14 @@
+package com.cltech.lis.api.rest.models.services;
+
+import java.util.List;
+
+import com.cltech.lis.api.rest.models.entity.Paciente;
+import com.cltech.lis.api.rest.models.entity.Tipo;
+
+public interface IPacienteService {	
+	
+	public List<Paciente> findAll();
+	
+	public List<Tipo> findAllTipos();
+
+}

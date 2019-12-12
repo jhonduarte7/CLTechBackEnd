@@ -1,0 +1,5 @@
+package com.cltech.lis.api.rest.models.controllers;
+
+public class PacienteRestController {
+
+}

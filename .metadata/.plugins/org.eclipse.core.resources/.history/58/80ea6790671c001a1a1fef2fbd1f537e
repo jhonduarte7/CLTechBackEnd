@@ -1,0 +1,15 @@
+package com.cltech.lis.api.rest.models.services;
+
+import java.util.List;
+
+import com.cltech.lis.api.rest.models.entity.Paciente;
+
+public class PacienteService implements IPacienteService {
+
+	@Override
+	public List<Paciente> findAll() {
+		
+		return null;
+	}
+
+}

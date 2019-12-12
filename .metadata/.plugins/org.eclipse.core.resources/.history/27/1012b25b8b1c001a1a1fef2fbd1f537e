@@ -1,0 +1,33 @@
+package com.cltech.lis.api.rest.models.services;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.cltech.lis.api.rest.models.dao.IPacienteDao;
+import com.cltech.lis.api.rest.models.entity.Paciente;
+import com.cltech.lis.api.rest.models.entity.Tipo;
+
+@Service
+public class PacienteServiceImpl implements IPacienteService {
+	
+	@Autowired
+	IPacienteDao pacienteDao;
+
+	@Override
+	@Transactional
+	public List<Paciente> findAll() {
+		
+		return (List<Paciente>) pacienteDao.findAll();
+	}
+
+	@Override
+	public List<Tipo> findAllTipos() {
+		
+		return null;
+	}
+	
+	
+
+}

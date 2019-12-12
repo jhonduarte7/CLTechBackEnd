@@ -1,0 +1,9 @@
+package com.cltech.lis.api.rest.models.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.cltech.lis.api.rest.models.entity.Orden;
+
+public interface IOdenDao extends CrudRepository<Orden, Long> {
+
+}

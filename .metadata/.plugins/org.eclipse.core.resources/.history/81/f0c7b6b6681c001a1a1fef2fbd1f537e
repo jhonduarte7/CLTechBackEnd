@@ -1,0 +1,20 @@
+package com.cltech.lis.api.rest.models.services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.cltech.lis.api.rest.models.entity.Paciente;
+
+@Service
+public class PacienteServiceImpl implements IPacienteService {
+
+	@Override
+	public List<Paciente> findAll() {
+		
+		return null;
+	}
+	
+	
+
+}

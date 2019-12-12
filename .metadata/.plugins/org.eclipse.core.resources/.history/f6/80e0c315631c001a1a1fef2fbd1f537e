@@ -1,0 +1,20 @@
+package com.cltech.lis.api.rest.models.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="pacientes")
+public class Paciente implements Serializable {
+	
+	private Long id;
+	private String nombres;
+	private String apellidos;
+
+	
+	private static final long serialVersionUID = 1L;
+
+}

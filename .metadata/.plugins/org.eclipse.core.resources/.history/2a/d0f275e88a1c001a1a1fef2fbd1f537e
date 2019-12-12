@@ -1,0 +1,11 @@
+package com.cltech.lis.api.rest.models.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.cltech.lis.api.rest.models.entity.Paciente;
+
+public interface IPacienteDao extends CrudRepository<Paciente, Long> {
+	
+	public List<Tipo> findAllTipos();
+
+}
