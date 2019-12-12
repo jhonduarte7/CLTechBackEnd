@@ -1842,3 +1842,6 @@
 2019-12-12 10:30:22,547 [Worker-324: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CL_Tech\CLTechBackEnd\lis-api-rest\src\test\resources
 2019-12-12 10:36:31,596 [Worker-329: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-12 10:36:31,598 [Worker-329: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-12 10:36:31,603 [Worker-329: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-12 10:36:31,606 [Worker-329: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-12 10:36:31,606 [Worker-329: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CL_Tech\CLTechBackEnd\lis-api-rest\src\test\resources
