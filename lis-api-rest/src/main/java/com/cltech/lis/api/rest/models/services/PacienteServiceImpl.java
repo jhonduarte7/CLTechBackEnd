@@ -73,6 +73,18 @@ public class PacienteServiceImpl implements IPacienteService {
 		ordenDao.deleteById(id);
 		
 	}
+
+	@Override
+	public List<Orden> findAllOrdenes() {
+		
+		return (List<Orden>) ordenDao.findAll();
+	}
+
+	@Override
+	public Paciente findById(Long id) {
+	
+		return pacienteDao.findById(id).orElse(null);
+	}
 	
 	
 

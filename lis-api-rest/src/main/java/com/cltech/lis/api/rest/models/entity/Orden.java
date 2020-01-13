@@ -47,11 +47,14 @@ public class Orden implements Serializable {
 		this.fechaIngreso = new Date();
 	}
 
+	
+	@JsonIgnoreProperties({"ordenes","hibernateLazyInitializer", "handler"})
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Paciente paciente;
 
+	@JsonIgnoreProperties(value={"hibernateLazyInitializer", "handler"})
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "linea_id")
+	@JoinColumn(name = "orden_id")
 	private List<LineaOrden> lineas;
 
 	public Orden() {

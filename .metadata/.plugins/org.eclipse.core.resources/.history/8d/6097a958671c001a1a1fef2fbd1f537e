@@ -1,5 +1,0 @@
-package com.cltech.lis.api.rest.models.services;
-
-public class PacienteService {
-
-}

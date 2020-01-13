@@ -1,8 +1,0 @@
-
-spring.datasource.url=jdbc:mysql://localhost/db_my_family_nexos?serverTimezone=EST5EDT
-spring.datasource.username=user_lis_data_base
-spring.datasource.password=abcd1234JKL##%%
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
-spring.jpa.hibernate.ddl-auto=create-drop
-logging.level.org.hibernate.SQL=debug

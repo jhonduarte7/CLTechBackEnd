@@ -1,6 +1,8 @@
 package com.cltech.lis.api.rest.models.controllers;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,7 +20,7 @@ import com.cltech.lis.api.rest.models.entity.Orden;
 import com.cltech.lis.api.rest.models.services.IPacienteService;
 
 
-@CrossOrigin(origins = {"http://localhost:4200"})
+//@CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
 @RequestMapping("/api")
 public class OrdenRestController {
@@ -26,6 +28,15 @@ public class OrdenRestController {
 	
 	@Autowired
 	private IPacienteService pacienteService;//En este servicio tengo los metodos que implementan el dao del crud repository para orden
+	
+	
+	 
+	@GetMapping("/ordenes")
+	public List<Orden>indexOrdenes(){
+		 
+		 return pacienteService.findAllOrdenes();
+	 }
+	
 	
 	@GetMapping("/orden/{id}")
 	public Orden showId(@PathVariable Long id) {
@@ -57,7 +68,7 @@ public class OrdenRestController {
 		
 		Orden OrdenActual = pacienteService.findOrdenById(id);
 		
-		OrdenActual.setTipo(orden.getTipo());		
+	    OrdenActual.setTipo(orden.getTipo());		
 		OrdenActual.setFechaIngreso(orden.getFechaIngreso());
 		OrdenActual.setPaciente(orden.getPaciente());
 		

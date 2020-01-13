@@ -1,6 +1,7 @@
 package com.cltech.lis.api.rest.models.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.cltech.lis.api.rest.models.entity.Orden;
 import com.cltech.lis.api.rest.models.entity.Paciente;
@@ -10,11 +11,15 @@ public interface IPacienteService {
 	
 	public List<Paciente> findAll();
 	
-	public List<Tipo> findAllTipos();
+	public Paciente findById(Long id);
 	
 	public void delete(Long id);
-	    
+    
 	public Paciente save(Paciente paciente);
+	
+	public List<Tipo> findAllTipos();
+	
+	
 
 	    
 	/*//////////////////////*******Para llamar los dao de las ordenes*******//////////////////*/
@@ -23,5 +28,7 @@ public interface IPacienteService {
 	public Orden saveOrden(Orden orden);
 	    
     public void deleteOrdenyById(Long id);
+    
+    public List<Orden>findAllOrdenes();
 
 }

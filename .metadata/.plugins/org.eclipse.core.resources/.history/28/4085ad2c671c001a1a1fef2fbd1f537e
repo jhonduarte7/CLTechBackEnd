@@ -1,9 +1,0 @@
-package com.cltech.lis.api.rest.models.services;
-
-import com.cltech.lis.api.rest.models.entity.Paciente;
-
-public interface IPacienteService {
-	
-	Paciente findAll();
-
-}

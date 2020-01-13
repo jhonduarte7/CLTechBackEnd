@@ -17,11 +17,22 @@ INSERT INTO examenes (nombre) VALUES('Toxicologico');
 
 /* Creamos algunas ordenes */
 INSERT INTO ordenes (tipo_id, fecha_ingreso, paciente_id) VALUES(1, NOW(), 1);
-INSERT INTO ordenes (tipo_id, fecha_ingreso, paciente_id) VALUES(2, NOW(), 1);
-
+INSERT INTO ordenes (tipo_id, fecha_ingreso, paciente_id) VALUES(1, NOW(), 2);
+INSERT INTO ordenes (tipo_id, fecha_ingreso, paciente_id) VALUES(2, NOW(), 3);
+INSERT INTO ordenes (tipo_id, fecha_ingreso, paciente_id) VALUES(2, NOW(), 4);
+INSERT INTO ordenes (tipo_id, fecha_ingreso, paciente_id) VALUES(1, NOW(), 5);
 
 /*Relacion en tabla intermedia en la cuarta forma norma de para examens-ordenes*/
-INSERT INTO ordenes_lineas (linea_id, examen_id) VALUES(1, 1);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(1, 1);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(1, 2);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(2, 3);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(2, 4);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(3, 1);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(3, 3);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(4, 2);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(4, 4);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(5, 3);
+INSERT INTO ordenes_lineas (orden_id, examen_id) VALUES(5, 1);
 
 
 

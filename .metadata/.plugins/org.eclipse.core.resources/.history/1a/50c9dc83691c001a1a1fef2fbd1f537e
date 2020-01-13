@@ -1,8 +1,0 @@
-package com.cltech.lis.api.rest.models.controllers;
-
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-public class PacienteRestController {
-
-}

@@ -1,5 +1,0 @@
-INSERT INTO clientes (documento_identidad, nombres, apellidos, sexo, fecha_nacimiento) VALUES ('1094427852', 'Jhonn Alexander','Duarte Rojas', 'masculino', '1980-11-22');
-INSERT INTO clientes (documento_identidad, nombres, apellidos, sexo, fecha_nacimiento) VALUES ('2457896544', 'Jhonn Alexander','Duarte Rojas', 'masculino', '1980-11-22');
-INSERT INTO clientes (documento_identidad, nombres, apellidos, sexo, fecha_nacimiento) VALUES ('4579954566', 'Jhonn Alexander','Duarte Rojas', 'masculino', '1980-11-22');
-INSERT INTO clientes (documento_identidad, nombres, apellidos, sexo, fecha_nacimiento) VALUES ('7748522598', 'Jhonn Alexander','Duarte Rojas', 'masculino', '1980-11-22');
-INSERT INTO clientes (documento_identidad, nombres, apellidos, sexo, fecha_nacimiento) VALUES ('7845123984', 'Jhonn Alexander','Duarte Rojas', 'masculino', '1980-11-22');
